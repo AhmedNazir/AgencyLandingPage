@@ -10,33 +10,27 @@ export default function HeaderSection() {
     //NavbarList
     const listArray = [
         {
-            key: 0,
             text: "Home",
             link: "#",
             isActive: true
         },
         {
-            key: 1,
             text: "Company",
             link: "#"
         },
         {
-            key: 2,
             text: "Marketplace",
             link: "#"
         },
         {
-            key: 3,
             text: "Features",
             link: "#"
         },
         {
-            key: 4,
             text: "Team",
             link: "#"
         },
         {
-            key: 5,
             text: "Contact",
             link: "#"
         }

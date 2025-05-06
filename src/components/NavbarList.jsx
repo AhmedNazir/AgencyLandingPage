@@ -23,7 +23,7 @@ function NavbarListItem({ item }) {
 
 export default function NavbarList({ listItems }) {
     const elements = listItems.map((item) => {
-        return <NavbarListItem item={item} key={item.key} />;
+        return <NavbarListItem item={item} key={item.text} />;
     });
 
     return (

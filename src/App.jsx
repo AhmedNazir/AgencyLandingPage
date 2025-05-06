@@ -4,7 +4,10 @@ import HeroSection from "./components/HeroSection";
 import CompaniesLogo from "./components/CompaniesLogo";
 import Design from "./components/Design";
 import ServiceSection from "./components/ServiceSection";
-import Temp from "./components/Temp";
+import MoreServiceSection from "./components/MoreServiceSection";
+import FaqSection from "./components/FaqSection";
+import TestimonialSection from "./components/TestimonialSection";
+import PricingSection from "./components/PricingSection";
 
 function Line() {
     return (
@@ -22,17 +25,20 @@ function Line() {
 export default function App() {
     return (
         <>
-            <Temp />
+            <FaqSection />
             <br />
             <br />
             <Line />
             {/* Line */}
             <br />
             <br />
-            {/* <HeaderSection /> */}
+            <HeaderSection />
             <HeroSection />
             <CompaniesLogo />
             <ServiceSection />
+            <MoreServiceSection />
+            <TestimonialSection />
+            <PricingSection />
             {/* Line */}
             <br />
             <br />
