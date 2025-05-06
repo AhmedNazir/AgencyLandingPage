@@ -3,6 +3,7 @@ import HeroSection from "./components/HeroSection";
 
 import CompaniesLogo from "./components/CompaniesLogo";
 import Design from "./components/Design";
+import ServiceSection from "./components/ServiceSection";
 import Temp from "./components/Temp";
 
 function Line() {
@@ -28,9 +29,10 @@ export default function App() {
             {/* Line */}
             <br />
             <br />
-            <HeaderSection />
+            {/* <HeaderSection /> */}
             <HeroSection />
             <CompaniesLogo />
+            <ServiceSection />
             {/* Line */}
             <br />
             <br />
