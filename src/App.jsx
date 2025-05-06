@@ -25,13 +25,13 @@ function Line() {
 export default function App() {
     return (
         <>
-            <FaqSection />
-            <br />
-            <br />
-            <Line />
+            {/* <FaqSection /> */}
+            {/* <br /> */}
+            {/* <br /> */}
+            {/* <Line /> */}
             {/* Line */}
-            <br />
-            <br />
+            {/* <br /> */}
+            {/* <br /> */}
             <HeaderSection />
             <HeroSection />
             <CompaniesLogo />
@@ -40,12 +40,12 @@ export default function App() {
             <TestimonialSection />
             <PricingSection />
             {/* Line */}
-            <br />
-            <br />
-            <Line />
-            <br />
-            <br />
-            <Design />
+            {/* <br /> */}
+            {/* <br /> */}
+            {/* <Line /> */}
+            {/* <br /> */}
+            {/* <br /> */}
+            {/* <Design /> */}
         </>
     );
 }

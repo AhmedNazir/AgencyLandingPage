@@ -2,10 +2,6 @@ import subService1Image from "../assets/features/feature-1.png";
 import subService2Image from "../assets/features/feature-2.png";
 import FeatureList from "./FeatureList";
 
-function ServiceComponentText({ text }) {
-    return <p className="mb-8 font-light lg:text-xl">{text}</p>;
-}
-
 function ServiceComponent({
     serviceHeadText,
     serviceText1,
@@ -18,7 +14,7 @@ function ServiceComponent({
                 <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
                     {serviceHeadText}{" "}
                 </h2>
-                <ServiceComponentText text={serviceText1} />
+                <p className="mb-8 font-light lg:text-xl">{serviceText1}</p>
                 <ul
                     role="list"
                     className="pt-8 space-y-5 border-t border-gray-200 my-7 dark:border-gray-700"
@@ -26,34 +22,9 @@ function ServiceComponent({
                     <FeatureList items={featureArray} />
                 </ul>
 
-                <ServiceComponentText text={serviceText2} />
+                <p className="mb-8 font-light lg:text-xl">{serviceText2}</p>
             </div>
         </>
-    );
-}
-
-function SubSectionService({
-    subServiceHeadText,
-    subServiceText1,
-    subServiceText2,
-    featureArray,
-    subServiceImage,
-    subServiceImageAlt
-}) {
-    return (
-        <div className="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
-            <ServiceComponent
-                serviceHeadText={subServiceHeadText}
-                serviceText1={subServiceText1}
-                serviceText2={subServiceText2}
-                featureArray={featureArray}
-            />
-            <img
-                className="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex"
-                src={subServiceImage}
-                alt={subServiceImageAlt}
-            />
-        </div>
     );
 }
 
@@ -96,24 +67,36 @@ export default function ServiceSection() {
             <section className="bg-gray-50 dark:bg-gray-800">
                 <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
                     {/* Sub Service 1 */}
-                    <SubSectionService
-                        subServiceHeadText={subService1HeadText}
-                        subServiceText1={subService1Text1}
-                        subServiceText2={subService1Text2}
-                        featureArray={feature1Array}
-                        subServiceImage={subService1Image}
-                        subServiceImageAlt={subService1ImageAlt}
-                    />
+
+                    <div className="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
+                        <ServiceComponent
+                            serviceHeadText={subService1HeadText}
+                            serviceText1={subService1Text1}
+                            serviceText2={subService1Text2}
+                            featureArray={feature1Array}
+                        />
+                        <img
+                            className="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex"
+                            src={subService1Image}
+                            alt={subService1ImageAlt}
+                        />
+                    </div>
 
                     {/* Sub Service 2 */}
-                    <SubSectionService
-                        subServiceHeadText={subService2HeadText}
-                        subServiceText1={subService2Text1}
-                        subServiceText2={subService2Text2}
-                        featureArray={feature2Array}
-                        subServiceImage={subService2Image}
-                        subServiceImageAlt={subService2ImageAlt}
-                    />
+                    <div className="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
+                        <img
+                            className="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex"
+                            src={subService2Image}
+                            alt={subService2ImageAlt}
+                        />
+
+                        <ServiceComponent
+                            serviceHeadText={subService2HeadText}
+                            serviceText1={subService2Text1}
+                            serviceText2={subService2Text2}
+                            featureArray={feature2Array}
+                        />
+                    </div>
                 </div>
             </section>
         </>
