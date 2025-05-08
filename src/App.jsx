@@ -8,6 +8,8 @@ import MoreServiceSection from "./components/MoreServiceSection";
 import FaqSection from "./components/FaqSection";
 import TestimonialSection from "./components/TestimonialSection";
 import PricingSection from "./components/PricingSection";
+import TrialSection from "./components/TrialSection";
+import FooterSection from "./components/FooterSection";
 
 function Line() {
     return (
@@ -25,7 +27,6 @@ function Line() {
 export default function App() {
     return (
         <>
-            {/* <FaqSection /> */}
             {/* <br /> */}
             {/* <br /> */}
             {/* <Line /> */}
@@ -39,6 +40,10 @@ export default function App() {
             <MoreServiceSection />
             <TestimonialSection />
             <PricingSection />
+            <FaqSection />
+            <TrialSection />
+            <FooterSection />
+
             {/* Line */}
             {/* <br /> */}
             {/* <br /> */}
