@@ -30,7 +30,7 @@ function ListCard({ data }) {
 function IconCard({ icons }) {
     const iconsElement = icons.map((item) => {
         return (
-            <li>
+            <li key={item.icon}>
                 <a
                     href={item.link}
                     className="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
