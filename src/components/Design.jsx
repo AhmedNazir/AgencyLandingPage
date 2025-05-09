@@ -125,12 +125,12 @@ export default function Designe() {
                                     width={1667}
                                     height={2500}
                                 >
-                                    <style
+                                    {/* <style
                                         type="text/css"
                                         dangerouslySetInnerHTML={{
                                             __html: "\n                                .st0 {\n                                    fill: #0acf83\n                                }\n\n                                .st1 {\n                                    fill: #a259ff\n                                }\n\n                                .st2 {\n                                    fill: #f24e1e\n                                }\n\n                                .st3 {\n                                    fill: #ff7262\n                                }\n\n                                .st4 {\n                                    fill: #1abcfe\n                                }\n                            "
                                         }}
-                                    />
+                                    /> */}
                                     <title>Figma.logo</title>
                                     <desc>Created using Figma</desc>
                                     <path
