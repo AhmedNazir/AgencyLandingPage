@@ -1,8 +1,6 @@
 import HeaderSection from "./components/Header";
 import HeroSection from "./components/HeroSection";
-
 import CompaniesLogo from "./components/CompaniesLogo";
-import Design from "./components/Design";
 import ServiceSection from "./components/ServiceSection";
 import MoreServiceSection from "./components/MoreServiceSection";
 import FaqSection from "./components/FaqSection";
